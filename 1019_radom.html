@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math.radom</title>
+</head>
+<body>
+    <script type="text/javascript">
+    /*var a=Math.random();随机产生[0,1)的数*/
+    //给程序添加猜的次数的限制，最多允许猜5次
+    alert("这是一个猜数字的游戏");
+    var a=parseInt(Math.random()*100);
+    var x=0;//用于判断次数
+    var y=prompt("输入你挑战次数");
+    /*
+    while(条件){语句;}
+    条件不成立即结束循环
+    break;常用于结束当前层的循环
+     */
+
+    while(x<y){
+        var guess=parseInt(prompt("请输入你猜的整数"));
+            if(guess>a){
+                alert("你猜的太大了，求求你猜小点吧");
+            }
+            else if(guess<a){
+                alert("你猜的太小了,求求你猜大点吧");
+            }
+                else{
+                    alert("你也太强了吧，这都被你知道了");
+                    break;
+                }
+        x++;
+        if(x==y){
+            alert("穴居人可是个大傻瓜，给你选择的机会你还猜不出来!");
+        }
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var a=parseInt(Math.random()*100);
+    for(var i=0;i<5;i++){
+        var guess=parseInt(prompt("请输入你猜的整数"));
+                    if(guess>a){
+                        alert("你猜的太大了，求求你猜小点吧");
+                    }
+                    else if(guess<a){
+                        alert("你猜的太小了,求求你猜大点吧");
+                    }
+                        else{
+                            alert("你也太强了吧，这都被你知道了");
+                            break;
+                        }
+    }
+    if(i>=5){alert("游戏结束");}
+    </script>
+</body>
+</html>
